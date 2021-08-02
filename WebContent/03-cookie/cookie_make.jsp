@@ -24,6 +24,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
+	<a href="cookie_check.jsp">쿠키 직접 확인해보기</a>
 </body>
 </html>
