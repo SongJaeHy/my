@@ -14,12 +14,12 @@
     travel_check.jsp 내부 로직이 travel_도시이름.jsp로 리다이렉트 해 줍니다.
     5. travel_도시이름.jsp 결과 페이지에는 관련도시의 유튜브 동영상을
     	게시해주시면 됩니다. --%>
-    <form action = "travel_check.jsp" method="post">
-    <input type = "radio" name = "parie" value="파리">파리<br>
-    <input type = "radio" name = "china" value="중국">중국<br>
-    <input type = "radio" name = "japan" value="일본">일본<br>
-    <input type = "radio" name = "russia" value="러시아">러시아<br>
-    <input type = "submit">
+    <form action = "travel_check.jsp" method="get">
+    <input type = "radio" name = "travel" value="paris">파리<br/>
+    <input type = "radio" name = "travel" value="china">중국<br/>
+    <input type = "radio" name = "travel" value="japan">일본<br/>
+    <input type = "radio" name = "travel" value="russia">러시아<br/>
+    <input type = "submit" />
    
     
     
