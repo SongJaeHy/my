@@ -10,7 +10,7 @@
   	
   	// 2. checkbox가 체크되었는지 여부도 받아옵니다.
   	String checkId = request.getParameter("id_check");
-  	String checkPw = request.getParameter("pw_check");
+  	String checkPw = request.getParameter("pw_check");  	
   %>     
 
 <!DOCTYPE html>
@@ -33,9 +33,26 @@
 		response.addCookie(idCookie);
 		
 		// 체크박스가 체크되어 있을 경우, 아이디 비밀번호 자동입력 을 위한
-		// 쿠키를 발급하기
+		// 쿠키를 발급하기(20초)
+		// "remember_id", "remember_pw"를 쿠키이름으로
+		// id, pw를  쿠키값으로 가지는 쿠키 2개를 생성해 발송
+		// 단, 쿠키 발급은 checkId 혹은 checkPw값이 yes인 경우에만
+		// 발급합니다.
 		
-
+		// id체크박스
+		if(checkId!= null&&checkId.equals("yes")){
+		Cookie idMemory = new Cookie("remember_id",id);
+		idMemory.setMaxAge(20);
+		response.addCookie(idMemory);		
+		}
+		if(checkPw!=null && checkPw.equals("yes")){
+		Cookie pwMemory = new Cookie("remember_pw", pw);
+		pwMemory.setMaxAge(20);
+		response.addCookie(pwMemory);
+		}
+	
+		
+		
 	// 로그인 성공시 cookie_welcome.jsp로 보내주고
 		response.sendRedirect("cookie_welcome.jsp");
 	}else{
