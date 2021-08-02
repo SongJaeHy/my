@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <%
 	String strAge = request.getParameter("age");
 int age = Integer.parseInt(strAge);
@@ -19,7 +20,6 @@ if(age >=20){
 
 %> 
  
-<a href="res_no.jsp">no로 이동</a>
-<a href="res_ok.jsp">ok로 이동</a>
+
 </body>
 </html>

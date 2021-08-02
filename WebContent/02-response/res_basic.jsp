@@ -8,7 +8,7 @@
 </head>
 <body>
 	<form action="res_check.jsp" method="get">
-	단신의 나이를 입력해주세요
+	당신의 나이를 입력해주세요
 	<input type="text" name="age">
 	<input type="submit" value="확인"/>
 	
