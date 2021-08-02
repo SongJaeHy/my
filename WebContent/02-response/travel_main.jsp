@@ -20,7 +20,7 @@
     <input type = "radio" name = "travel" value="japan">일본<br/>
     <input type = "radio" name = "travel" value="russia">러시아<br/>
     <input type = "submit" />
-    <input type ="reset"/>
+    <input type ="reset" value="초기화"/>
    
     
     
