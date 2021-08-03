@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+   
 <%
+	
   	// 0. post방식 받아오기 처리
   	response.setCharacterEncoding("utf-8");
   
@@ -20,6 +22,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <%
 	// 아이디는 abc1234, 비밀번호 aaa1111로 처리합니다.
 	if(id.equals("abc1234")&&pw.equals("aaa1111")){
